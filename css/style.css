@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primary-color: #8f0101;
+  --primary-color: #01438f;
   --secondary-color: #1565c0;
   --background-primary-color: #ffffff;
   --background-secondary-color: #f5f5f5;
@@ -241,7 +241,170 @@ nav {
     padding: 38px 160px;
   }
 }
+/* ===== HERO (topo e imagem do rodapé) ===== */
+.hero .hero-img, .bottom-hero .hero-img {
+  height: 400px;
+  width: 100%;
+}
 
+.hero .hero-img {
+  background: url(../img/hero-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.bottom-hero .hero-img {
+  background: url(../img/bg-bottom-hero-mobile.png) no-repeat;
+  background-size: cover;
+}
+
+.hero h2 {
+  padding: 88px 24px;
+  margin: 0px;
+  font-weight: var(--text-weight);
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero-img {
+    height: 620px;
+    background: url(../img/hero-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .bottom-hero .hero-img {
+    height: 400px;
+    background: url(../img/bg-bottom-hero-tablet.png) no-repeat;
+    background-size: cover;
+  }
+
+  .hero h2 {
+    padding: 88px 60px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .hero-img {
+    background: url(../img/hero-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .bottom-hero .hero-img {
+    height: 600px;
+    background: url(../img/bg-bottom-hero-desktop.png) no-repeat;
+    background-size: cover;
+  }
+
+  .hero h2 {
+    padding: 88px 120px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero h2 {
+    padding: 88px 160px;
+  }
+}
+/* ===== OFERTAS DA SEMANA ===== */
+.offers {
+  margin-bottom: 104px;
+}
+
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.offers-cards .card {
+  color: var(--text-secondary-color);
+  width: 312px;
+  height: 288px;
+  box-sizing: border-box;
+  padding: 24px 16px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.offers-cards .card header {
+  margin-bottom: 24px;
+}
+
+.offers-cards .card header p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+}
+
+.offers-cards .card header h3 {
+  font-size: 40px;
+  font-weight: var(--title-weight);
+  margin: 8px 0 0;
+}
+
+.offers-cards .card header span {
+  font-size: 32px;
+  margin-top: 24px;
+  display: inline-block;
+}
+
+.offers-cards .card.japao {
+  background: url(../img/bg-card-japao.jpg) no-repeat;
+  background-size: cover;
+}
+
+.offers-cards .card.san-andreas {
+  background: url(../img/bg-card-san-andreas.jpg) no-repeat;
+  background-size: cover;
+}
+
+.offers-cards .card.paraiba {
+  background: url(../img/bg-card-paraiba.jpg) no-repeat;
+  background-size: cover;
+}
+
+.offers-cards .card.manaus {
+  background: url(../img/bg-card-manaus.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .offers-cards .card {
+    width: 420px;
+    height: 308px;
+  }
+
+  .offers-cards .card header h3 {
+    font-size: 48px;
+  }
+
+  .offers-cards .card header span {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .offers-cards .card {
+    width: 588px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .offers-cards {
+    width: 1250px;
+    margin: 0 auto;
+  }
+}
 /* ===== BUSQUE POR CATEGORIA ===== */
 .categories-cards {
   display: flex;
